@@ -1,11 +1,13 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
+
 // 2. Include any default variable overrides here
 $font-family-base: 'Roboto', sans-serif;
-$primary: #4e5eadb9;
+$primary: #5465bcb9;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
+
 // 4. Include any default map overrides here
 // Create your own map
 $custom-colors: (
@@ -18,6 +20,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/root";
+
 // 6. Optionally include any other parts as needed
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/reboot";
@@ -26,6 +29,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
+
 // components
 // Layout & components
 @import "../node_modules/bootstrap/scss/tables";
@@ -52,20 +56,24 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/spinners";
 @import "../node_modules/bootstrap/scss/offcanvas";
 @import "../node_modules/bootstrap/scss/placeholders";
+
 // 7. Optionally include utilities API last to generate classes based on the Sassmap in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";
+
 // 8. Add additional custom code here
 
-//css classes 
-.card {
-    width: 35%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    img {
-        width: 70%;
-        margin: 5px;
-    }
-}
+
+//css classes 
+// .card {
+    
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     img {
+//         width: 70%;
+//         margin: 5px;
+//     }
+// }
