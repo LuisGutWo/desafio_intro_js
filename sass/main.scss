@@ -62,18 +62,23 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 8. Add additional custom code here
 
+.card-body {
+    .form-floating {
+        .form-control {
+            border-radius: 5px;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            transition: all 0.5s ease;
+        }
 
 
-//css classes 
-// .card {
-    
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
+    }
 
-//     img {
-//         width: 70%;
-//         margin: 5px;
-//     }
-// }
+    button:hover {
+        transform: scale(1.03);
+        transition: all 0.5s ease;
+
+    }
+}
