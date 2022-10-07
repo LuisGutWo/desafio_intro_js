@@ -1,16 +1,23 @@
-const elementCantidad = document.querySelector("#cantidad");
-const elementColor = document.querySelector("#color");
-const elementButton = document.querySelector("#button");
-const elementPrecio = document.querySelector("#precio");
 
-elementButton.addEventListener("click", () => {
-    console.log("me diste click al boton");
-    console.log(elementCantidad.value);
-    console.log(elementColor.value);
-    console.log(elementPrecio.value);
+//variables 
+const precio = 380000
+const button = document.querySelector("#button")
+const cantidad = document.querySelector("#cantidad")
+const color = document.querySelector("#color")
 
-    elementPrecio.textContent = elementCantidad.value;
-    elementPrecio.style.color = elementColor.value;
-});
+//styles 
 
+totalPrecio.textContent = "Total:      "
+totalCantidad.textContent = "Cantidad:    "
+colorResult.textContent = "Color:    "
+
+
+
+//listeners
+button.addEventListener("click", () => {
+    totalPrecio.textContent = `Total: ${cantidad.value * precio}`;
+    totalCantidad.textContent = `Cantidad: ${cantidad.value}`;
+
+    colorResult.style.backgroundColor = `Color: ${color.value}`;   
+})
 

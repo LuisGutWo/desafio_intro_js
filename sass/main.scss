@@ -62,10 +62,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 8. Add additional custom code here
 
+//main card styles 
 .card-body {
     .form-floating {
         .form-control {
             border-radius: 5px;
+            width: 100%;
         }
 
         &:hover {
@@ -73,6 +75,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
             transition: all 0.5s ease;
         }
 
+        .form-control-2 {
+            border-radius: 5px;
+            width: 4rem;
+        }
 
     }
 
@@ -81,4 +87,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
         transition: all 0.5s ease;
 
     }
+}
+
+//resulter section
+
+#color-result {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px #000;
 }

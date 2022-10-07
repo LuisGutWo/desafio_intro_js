@@ -9995,14 +9995,26 @@ progress {
 }
 .card-body .form-floating .form-control {
   border-radius: 5px;
+  width: 100%;
 }
 .card-body .form-floating:hover {
   transform: scale(1.03);
   transition: all 0.5s ease;
 }
+.card-body .form-floating .form-control-2 {
+  border-radius: 5px;
+  width: 4rem;
+}
 .card-body button:hover {
   transform: scale(1.03);
   transition: all 0.5s ease;
+}
+
+#color-result {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 1px #000;
 }
 
 /*# sourceMappingURL=main.css.map */
