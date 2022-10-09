@@ -4,6 +4,7 @@
 // 2. Include any default variable overrides here
 $font-family-base: 'Roboto', sans-serif;
 $primary: #5465bcb9;
+$danger: #AF0171;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -78,6 +79,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 //resulter section
 
 #colorResult {
+    background-color: black;
     font-size: 90%;
     width: 1.6rem;
     height: 1.6rem;

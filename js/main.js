@@ -10,7 +10,7 @@ totalCantidad.textContent = "Cantidad:    "
 
 //listeners
 button.addEventListener("click", () => {
-    totalPrecio.textContent = `Total: ${cantidad.value * precio}`;
+    totalPrecio.textContent = `Total: ${Number(cantidad.value) * Number(precio)} `;
     totalCantidad.textContent = `Cantidad: ${cantidad.value}`;
     colorResult.style.backgroundColor = color.value;
 
